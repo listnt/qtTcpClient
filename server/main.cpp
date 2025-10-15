@@ -50,14 +50,16 @@ int main(int argc, char *argv[])
     // A boolean option with a single name (-p)
     QCommandLineOption port_arg("p",
                                 QCoreApplication::translate("main", "Tcp port"),
-                                QCoreApplication::translate("main", "port")
+                                QCoreApplication::translate("main", "port"),
+                                "8080"
                                 );
     parser.addOption(port_arg);
 
     // A boolean option with multiple names (-m, --max_clients)
     QCommandLineOption max_clients_arg(QStringList() << "m" << "max clients",
                                        QCoreApplication::translate("main", "Max number of clients."),
-                                       QCoreApplication::translate("main", "max_clients")
+                                       QCoreApplication::translate("main", "max_clients"),
+                                       "100"
                                        );
     parser.addOption(max_clients_arg);
 

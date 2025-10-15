@@ -232,7 +232,3 @@ The application uses a simple text-based protocol:
   - 🔴 Red circle = Disconnected from server
 - **User Counter**: Shows the number of currently connected users
 - **Response Area**: Displays server responses and echo messages
-
-## License
-
-This project is part of a Qt assignment and is intended for educational purposes.

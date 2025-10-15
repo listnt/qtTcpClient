@@ -2,33 +2,6 @@
 
 A Qt-based TCP client-server application that demonstrates network communication between a GUI client and a command-line server.
 
-## Table of Contents
-
-- [Project Structure](#project-structure)
-- [Features](#features)
-  - [Client Application (GUI)](#client-application-gui)
-  - [Server Application (Command Line)](#server-application-command-line)
-- [Prerequisites](#prerequisites)
-- [Building the Project](#building-the-project)
-  - [Using Qt Creator](#using-qt-creator)
-  - [Alternative: Command Line Build (Advanced)](#alternative-command-line-build-advanced)
-- [Usage](#usage)
-  - [Starting the Server](#starting-the-server)
-  - [Running the Client](#running-the-client)
-- [Quick Start Guide](#quick-start-guide)
-  - [Step-by-Step Usage](#step-by-step-usage)
-  - [Interface Elements](#interface-elements)
-- [Protocol](#protocol)
-- [Technical Details](#technical-details)
-  - [Client Implementation](#client-implementation)
-  - [Server Implementation](#server-implementation)
-  - [Network Architecture](#network-architecture)
-- [Development Notes](#development-notes)
-- [Troubleshooting](#troubleshooting)
-  - [Common Issues](#common-issues)
-  - [Debugging](#debugging)
-- [License](#license)
-
 ## Project Structure
 
 ```

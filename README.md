@@ -2,6 +2,33 @@
 
 A Qt-based TCP client-server application that demonstrates network communication between a GUI client and a command-line server.
 
+## Table of Contents
+
+- [Project Structure](#project-structure)
+- [Features](#features)
+  - [Client Application (GUI)](#client-application-gui)
+  - [Server Application (Command Line)](#server-application-command-line)
+- [Prerequisites](#prerequisites)
+- [Building the Project](#building-the-project)
+  - [Using Qt Creator](#using-qt-creator)
+  - [Alternative: Command Line Build (Advanced)](#alternative-command-line-build-advanced)
+- [Usage](#usage)
+  - [Starting the Server](#starting-the-server)
+  - [Running the Client](#running-the-client)
+- [Quick Start Guide](#quick-start-guide)
+  - [Step-by-Step Usage](#step-by-step-usage)
+  - [Interface Elements](#interface-elements)
+- [Protocol](#protocol)
+- [Technical Details](#technical-details)
+  - [Client Implementation](#client-implementation)
+  - [Server Implementation](#server-implementation)
+  - [Network Architecture](#network-architecture)
+- [Development Notes](#development-notes)
+- [Troubleshooting](#troubleshooting)
+  - [Common Issues](#common-issues)
+  - [Debugging](#debugging)
+- [License](#license)
+
 ## Project Structure
 
 ```
@@ -186,6 +213,25 @@ The application uses a simple text-based protocol:
 - Server logs all received messages to stdout
 - Client displays connection status in GUI
 - Use `netstat -tlnp` to check if server is listening on expected port
+
+## Quick Start Guide
+
+![Application Instructions](docs/instruction.png)
+
+### Step-by-Step Usage
+
+1. **Configure Connection**: Set your server IP address and port number
+2. **Establish Connection**: Click the "Connect" button to connect to the server
+3. **Send Messages**: Type your message in the input field and click "Send Message"
+4. **Monitor Status**: Watch the connection status indicator and server responses
+
+### Interface Elements
+
+- **Connection Status Indicator**: 
+  - 🟢 Green circle = Connected to server
+  - 🔴 Red circle = Disconnected from server
+- **User Counter**: Shows the number of currently connected users
+- **Response Area**: Displays server responses and echo messages
 
 ## License
 

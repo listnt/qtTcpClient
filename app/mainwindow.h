@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "../common/logger.hpp"
 #include "pkg/tcp/tcpclient.h"
 #include <thread>
 
@@ -26,12 +27,10 @@ public:
 
     void init();
     void statusCheck();
-    void connectTo(std::string host,int port);
-    std::pair<bool,std::string> sendMessage(std::string msg);
+    void connectTo(std::string host, int port);
+    std::pair<bool, std::string> sendMessage(std::string msg);
 
     void processServerResponse(std::string msg);
-
-
 
 private:
     Ui::MainWindow *ui;

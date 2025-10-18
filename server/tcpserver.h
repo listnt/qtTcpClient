@@ -1,13 +1,10 @@
-
+#include "../common/logger.hpp"
 #include <arpa/inet.h>
 #include <cstdint>
 #include <cstdio>
 #include <cstring> // For strerror
 #include <errno.h>
-#include <format>
 #include <functional>
-#include <iostream>
-#include <unistd.h>
 #include <mutex>
 #include <netinet/in.h>
 #include <netinet/tcp.h> // For TCP keepalive options
@@ -16,6 +13,7 @@
 #include <sys/select.h>
 #include <sys/socket.h>
 #include <thread>
+#include <unistd.h>
 #include <vector>
 
 class TcpServer {
@@ -36,7 +34,6 @@ class TcpServer {
 
   void initSocket();
   void initAddress(int port);
-  void removeDeadClients();
   std::pair<bool, std::string> acceptClient(int timeout);
   std::pair<bool, std::string> waitForClient(int timeout);
 
